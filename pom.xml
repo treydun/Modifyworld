@@ -68,6 +68,7 @@
             -->
         </plugins>
     </build>
+
     <dependencies>
         <dependency>
             <groupId>org.bukkit</groupId>
@@ -75,20 +76,16 @@
             <version>1.12-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <!--
         <dependency>
             <groupId>ru.tehkode</groupId>
             <artifactId>PermissionsEx</artifactId>
-            <version>1.23</version>
-            <scope>provided</scope>
-        </dependency>
-        -->
-        <dependency>
-            <groupId>permissionsex</groupId>
-            <artifactId>ru.tehkode.permissions.bukkit</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/lib/PermissionsEx.jar</systemPath>
+            <version>1.23.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>net.milkbowl.vault</groupId>
@@ -104,6 +101,8 @@
         </repository>
 
         <repository>
+          <id>pex-repo</id>
+          <url>https://pex-repo.aoeu.xyz/</url>
             <id>pex-repo</id>
             <url>http://pex-repo.aoeu.xyz</url>
         </repository>
