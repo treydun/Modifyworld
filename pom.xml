@@ -79,7 +79,7 @@
         <dependency>
             <groupId>ru.tehkode</groupId>
             <artifactId>PermissionsEx</artifactId>
-            <version>1.23.1</version>
+            <version>1.23</version>
             <exclusions>
                 <exclusion>
                     <groupId>*</groupId>
@@ -103,8 +103,6 @@
         <repository>
           <id>pex-repo</id>
           <url>https://pex-repo.aoeu.xyz/</url>
-            <id>pex-repo</id>
-            <url>http://pex-repo.aoeu.xyz</url>
         </repository>
         <repository>
             <id>vault-repo</id>
